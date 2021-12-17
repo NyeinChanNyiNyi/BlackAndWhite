@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* variables */
+:root{
+    /* Colors */
+    --firstColor:#222831;
+    --secondColor:#393E46;
+    --thirdColor:#00ADB5;
+    --finalColor:#EEEEEE;
+
+    /* Fonts */
+}
+
+.banner{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text h1{
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.buttonOne{
+    padding: 20px;
+    font-size: 20px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.go{
+    color: #fff;
+}
+
+
+.nav-menu,.theme{
+    font-size: 40px;
+    color: #fff;
+    position: fixed;
+    top:50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.theme{
+    left: 50px;
+}
+.nav-menu:hover{
+    font-size: 45px;
+    
+}
+
+.nav-menubar{
+    height: 100vh;
+    position: fixed;
+    top:0;
+    width: 300px;
+    background: var(--secondColor);
+    transition: 1s;
+    z-index: 2;
+}
+
+.uil-times{
+    font-size: 50px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width:770px) {
+    .text h1{
+        font-size: 60px;
+    }
+    .buttonOne{
+        width: 190px;
+        padding: 17px;
+    }
+}
+
